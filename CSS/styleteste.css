@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Genos&display=swap');
+
+
+form {
+  background-image: linear-gradient(to left, #000000, #fff);
+  border-radius: 10px;
+  padding: 10px;
+  position: absolute;
+  font-family: 'Genos', sans-serif;
+  font-size: 15px;
+}
+
+legend {
+  text-align: center;
+}
+
+button {
+  background-color: white;
+  color:#000;
+  transition: color, 0.5s;
+}
+
+button:hover{
+  background-color: #1a73e8;
+  color: #fff;
+  transform: scale(1.5);
+}
+
+.box1 {
+  display: flex;
+  justify-content: center;
+}

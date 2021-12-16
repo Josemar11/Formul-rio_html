@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Formulario</title>
+    <link href="./css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="box1">
+      <form action="/registro" method="POST">
+        <fieldset>
+          <legend>Formulário</legend>
+          <div>
+            <p>
+              <label for="nome">Nome</label>
+              <input type="text" name="nome" id="nome" maxlength="100" />
+            </p>
+          </div>
+          <div>
+            <p>
+              <label for="email">Email</label>
+              <input type="text" name="email" id="email" />
+            </p>
+          </div>
+          <div>
+            <p>
+              <label for="telefone">Telefone</label>
+              <input type="number" name="telefone" id="telefone" />
+            </p>
+          </div>
+          <div>
+            <p>
+              <label for="data">Data de Nascimento</label>
+              <input type="date" name="data" id="data" />
+            </p>
+          </div>
+          <div>
+            <p>Maioridade</p>
+            <input type="radio" id="maior de idade" name="maioridade" value="sim"/>
+            <label for="maior de idade">Maior de idade</label>
+            <input type="radio" id="menor de idade" name="maioridade" value="nao"/>
+            <label for="menor de idade">Menor de idade</label>
+          </div>
+          <div>
+            <p>Região de interesse</p>
+            <input type="radio" id="centro" name="interesse" value="ircentro" />
+            <label for="centro">Centro</label>
+            <input
+              type="radio"
+              id="litoral"
+              name="interesse"
+              value="irlitoral"
+            />
+            <label for="litoral">Litoral</label>
+            <input type="radio" id="rural" name="interesse" value="irrural" />
+            <label for="rural">Rural</label>
+          </div>
+          <div>
+            <p>Motivo da visita</p>
+            <label for="turismo">Turismo</label>
+            <input type="checkbox" name="motivo" value="turista">
+            <label for="residente">Residente</label>
+            <input type="checkbox" name="motivo" value="residente">
+            <label for="estudante">Estudante</label>
+            <input type="checkbox" name="motivo" value="estudante">
+          </div>
+          <div class="botao">
+            <p>
+              <button type="submit" value="botaoenviar">Enviar</button>
+            </p>
+          </div>
+          <div class="botao">
+            <p>
+              <button type="reset" value="botaoreset">Cancelar</button>
+            </p>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
